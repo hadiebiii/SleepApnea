@@ -57,19 +57,25 @@
             display: block;
         }
 
-        .text-columns {
-            column-count: 2;
-            column-gap: 3rem;
+        /* Updated to Single Column Layout */
+        .text-container {
+            column-count: 1;
+            max-width: 850px;
+            margin: 0 auto;
             text-align: justify;
-            line-height: 1.7;
-            font-size: 1.05rem;
+            line-height: 1.8;
+            font-size: 1.15rem;
+        }
+
+        .text-container p {
+            margin-bottom: 1.5rem;
         }
 
         .slide-title {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 700;
-            margin-bottom: 2rem;
+            margin-bottom: 1.5rem;
             text-align: center;
             color: #111827;
             text-transform: uppercase;
@@ -80,7 +86,7 @@
             text-align: center;
             font-size: 1.2rem;
             font-style: italic;
-            margin-top: -1.5rem;
+            margin-top: -1rem;
             margin-bottom: 2.5rem;
             color: #4b5563;
         }
@@ -138,13 +144,6 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
-        /* Overrides for specific single column layouts */
-        .single-column {
-            column-count: 1;
-            max-width: 800px;
-            margin: 0 auto;
-        }
     </style>
 </head>
 <body>
@@ -159,11 +158,9 @@
     <div class="slide active" id="slide-1">
         <h1 class="slide-title">IMPACT OF SLEEP APNEA ON RETINAL VEIN OCCLUSION IN INDIVIDUALS <mark class="hl-blue">55 AND YOUNGER</mark></h1>
         <p class="slide-subtitle">A Retrospective Cohort Study</p>
-        <div class="text-columns">
+        <div class="text-container">
             <p><strong>Purpose:</strong> Sleep apnea (SA) is a systemic vascular risk factor, but its association with retinal vein occlusion (RVO) in younger adults is unclear. This study evaluated the relationship between SA and RVO, including central RVO and branch RVO, in individuals <mark class="hl-blue">≤55 years</mark>.</p>
-            <br>
             <p>Retinal vein occlusion (RVO) is the second most common retinal vascular disorder... The pathogenesis of RVO is multifactorial, with systemic conditions such as <mark class="hl-yellow">hypertension</mark>, <mark class="hl-yellow">hyperlipidemia</mark>, and <mark class="hl-yellow">diabetes mellitus</mark> increasing the risk of vascular occlusion.</p>
-            <br>
             <p>Although previous studies have investigated this in older populations, there is limited research on whether younger individuals with SA have an increased risk of developing RVO. This study aims to fill this gap by analyzing the association between SA and RVO, including subset analysis of BRVO and CRVO, in individuals <mark class="hl-blue">55 years old or younger</mark>.</p>
         </div>
     </div>
@@ -171,9 +168,8 @@
     <!-- Slide 2: Clinical Problem -->
     <div class="slide" id="slide-2">
         <h1 class="slide-title">Systemic Effects of Sleep Apnea</h1>
-        <div class="text-columns single-column text-center">
+        <div class="text-container text-center" style="text-align: center;">
             <p>Sleep apnea is well established as a risk factor for cardiovascular and cerebrovascular diseases, yet its impact on retinal vascular disease remains underexplored. The sustained episodes of nocturnal hypoxia and resulting inflammatory and hypercoagulable states associated with SA may predispose individuals to microvascular complications such as RVO.</p>
-            <br>
             <p>The connection between SA and RVO is biologically plausible given the effects of SA on the vascular system. Sleep apnea is characterized by repeated episodes of airway collapse during sleep, leading to <mark class="hl-red">nocturnal hypoxia</mark>, hypercapnia, <mark class="hl-red">sympathetic nervous system activation</mark>, and <mark class="hl-red">systemic inflammation</mark>. This cascade promotes <mark class="hl-green">endothelial dysfunction</mark>, increased <mark class="hl-green">oxidative stress</mark>, and a <mark class="hl-green">hypercoagulable state</mark>, all of which are well-recognized contributors to venous thrombotic events.</p>
         </div>
     </div>
@@ -181,11 +177,9 @@
     <!-- Slide 3: RVO Subtypes Pathophysiology -->
     <div class="slide" id="slide-3">
         <h1 class="slide-title">Pathophysiology of RVO Subtypes</h1>
-        <div class="text-columns">
+        <div class="text-container">
             <p>Retinal vein occlusion can be categorized into two subcategories, <mark class="hl-blue">central retinal vein occlusion (CRVO)</mark>, and <mark class="hl-blue">branch retinal vein occlusion (BRVO)</mark>. Branch retinal vein occlusion is more frequently encountered in the general population, whereas CRVO often results in more severe visual impairment.</p>
-            <br>
             <p>Although they share common systemic risk factors, the underlying pathophysiology differs. BRVO is typically associated with localized venous compression at <mark class="hl-yellow">arteriovenous crossings</mark>, whereas CRVO involves impaired venous outflow at the level of the <mark class="hl-yellow">lamina cribrosa</mark>.</p>
-            <br>
             <p>The differential impact of SA on BRVO versus CRVO may reflect differences in how systemic hypoxia and inflammation affect peripheral versus central retinal vasculature, with BRVO's localized pathologic condition potentially rendering it more vulnerable to SA-related stressors.</p>
         </div>
     </div>
@@ -193,11 +187,9 @@
     <!-- Slide 4: Study Design and Database -->
     <div class="slide" id="slide-4">
         <h1 class="slide-title">Study Design and Data Source</h1>
-        <div class="text-columns">
+        <div class="text-container">
             <p>This <mark class="hl-blue">retrospective cohort study</mark> used data from the <mark class="hl-blue">TriNetX US Collaborative Network</mark>, a federated research platform that aggregates <mark class="hl-yellow">de-identified electronic health records</mark> from participating health care organizations across the United States. The platform is fully compliant with the Health Insurance Portability and Accountability Act...</p>
-            <br>
             <p>TriNetX's integrated analytic tools, including incidence and prevalence estimation, outcomes analyses, survival modeling, and propensity score matching, enable patient-level analyses while reporting only population-level results, thereby preserving data confidentiality.</p>
-            <br>
             <p><mark class="hl-green">Propensity score matching</mark> was performed at a 1:1 ratio using nearest-neighbor matching without replacement to reduce baseline imbalances.</p>
         </div>
     </div>
@@ -205,11 +197,9 @@
     <!-- Slide 5: Inclusion Criteria and Matching Variables -->
     <div class="slide" id="slide-5">
         <h1 class="slide-title">Cohort Selection and Matching</h1>
-        <div class="text-columns">
+        <div class="text-container">
             <p>Eligible participants were individuals <mark class="hl-blue">55 years of age or younger</mark> at the time of their first qualifying health care encounter. Two cohorts were established according to the presence or absence of SA, as identified by the <mark class="hl-green">International Classification of Diseases, 10th Revision (ICD-10) code G47.3</mark>.</p>
-            <br>
             <p>Matching variables included <mark class="hl-yellow">age, sex, race, body mass index (BMI), hypertension, diabetes mellitus, hyperlipidemia, and nicotine dependence</mark>. Covariate balance after propensity score matching was assessed using standardized mean differences (SMD).</p>
-            <br>
             <p>After propensity score matching, 2,087,539 patients were included in each cohort, yielding a combined sample size of <mark class="hl-red">4,175,078</mark> individuals. Baseline characteristics were generally well-balanced after propensity score matching...</p>
         </div>
     </div>
@@ -217,11 +207,9 @@
     <!-- Slide 6: Main Results - Overall RVO -->
     <div class="slide" id="slide-6">
         <h1 class="slide-title">Incidence of Retinal Vein Occlusion</h1>
-        <div class="text-columns single-column text-center">
+        <div class="text-container text-center" style="text-align: center;">
             <p>The incidence of RVO was higher in the SA cohort compared with controls. Among 2,087,064 patients with SA, 547 (<mark class="hl-blue">0.026%</mark>) developed RVO, versus 475 (<mark class="hl-blue">0.023%</mark>) in the control cohort, corresponding to a <mark class="hl-red">risk ratio (RR) of 1.152</mark> (95% CI: 1.018-1.302; P=0.024).</p>
-            <br>
             <p>Cox regression demonstrated a 21.9% increased hazard of RVO in SA patients compared with controls (<mark class="hl-red">HR=1.219</mark>, 95% CI: 1.078-1.378; log-rank χ²=9.958; P=0.002).</p>
-            <br>
             <p>At 1 year, cumulative incidence of RVO was 0.018% in SA versus 0.015% in controls... By 5 years, incidence reached 0.043% versus 0.037% for RVO... At 20 years, cumulative incidence rose to 0.176% versus 0.153% for RVO...</p>
         </div>
     </div>
@@ -229,11 +217,9 @@
     <!-- Slide 7: Subgroup Results - BRVO vs CRVO -->
     <div class="slide" id="slide-7">
         <h1 class="slide-title">BRVO versus CRVO Analysis</h1>
-        <div class="text-columns">
+        <div class="text-container">
             <p>Central retinal vein occlusion occurred in 316 patients (0.015%) in the SA cohort and 289 (0.014%) in controls, corresponding to a <mark class="hl-green">RR of 1.093</mark> (95% CI: 0.932-1.283; P=0.272). This difference was not statistically significant. Cox regression produced a <mark class="hl-green">HR of 1.154</mark> (95% CI: 0.984-1.353; log-rank χ²=3.093; P=0.079)...</p>
-            <br>
             <p>In this study, the increased incidence of RVO was primarily attributable to BRVO. BRVO occurred in 305 patients (0.015%) in the SA cohort versus 237 (0.011%) in controls, corresponding to an <mark class="hl-red">RR of 1.287</mark> (95% CI: 1.086-1.525; P=0.003).</p>
-            <br>
             <p>Cox regression confirmed a significant association, with SA patients experiencing a 36.7% increased hazard of BRVO compared with controls (<mark class="hl-red">HR= 1.367</mark>, 95% CI: 1.15-1.62; log-rank χ²=13.109; P<0.001).</p>
         </div>
     </div>
@@ -241,11 +227,9 @@
     <!-- Slide 8: Methodological Limitations -->
     <div class="slide" id="slide-8">
         <h1 class="slide-title">Study Limitations</h1>
-        <div class="text-columns">
+        <div class="text-container">
             <p>The retrospective study design and reliance on <mark class="hl-blue">ICD-10 codes</mark> may introduce <mark class="hl-red">misclassification</mark> or coding errors... The TriNetX database does not account for all RVO cases, particularly mild or asymptomatic ones who did not seek care...</p>
-            <br>
             <p>Although propensity score matching achieved adequate balance across most covariates, <mark class="hl-yellow">body mass index</mark> remained insufficiently balanced (SMD= 0.545). This represents a limitation and potential source of <mark class="hl-red">residual confounding</mark> because obesity is strongly associated not only with SA but also with vascular disease.</p>
-            <br>
             <p>In addition, several important variables such as diet, exercise, and management of SA (including <mark class="hl-green">CPAP use</mark>) were unmeasured in the database... Another limitation relates to the cumulative incidence curves. The apparent <mark class="hl-blue">late divergence</mark> of curves should be interpreted with caution because this likely reflects the smaller number of patients with extended follow-up...</p>
         </div>
     </div>
@@ -253,11 +237,9 @@
     <!-- Slide 9: Clinical Implications and Conclusion -->
     <div class="slide" id="slide-9">
         <h1 class="slide-title">Conclusion and Clinical Implications</h1>
-        <div class="text-columns">
+        <div class="text-container">
             <p>The findings of this study suggest that younger patients with SA may benefit from retinal screening, particularly those with coexisting vascular risk factors such as obesity, hypertension, diabetes, and hyperlipidemia. Early diagnosis and management of SA may reduce the risk of RVO and other vascular complications.</p>
-            <br>
             <p>This study establishes a <mark class="hl-green">significant association</mark> between sleep apnea and an elevated risk of retinal vein occlusion. The higher incidence of RVO overall and BRVO specifically highlights SA as a potential <mark class="hl-blue">independent risk factor</mark> for retinal vascular complications in younger populations.</p>
-            <br>
             <p>These findings emphasize the importance of recognizing SA as a contributor to microvascular disease. Future longitudinal studies are needed to confirm causality and explore whether interventions, such as CPAP therapy, can reduce RVO incidence...</p>
         </div>
     </div>
