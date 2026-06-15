@@ -19,6 +19,7 @@
             align-items: center;
             height: 100vh;
             overflow: hidden;
+            direction: ltr;
         }
 
         .slide-container {
@@ -57,12 +58,12 @@
             display: block;
         }
 
-        /* Updated to Single Column Layout */
+        /* Updated to Single Column Layout and Left-Aligned */
         .text-container {
             column-count: 1;
             max-width: 850px;
             margin: 0 auto;
-            text-align: justify;
+            text-align: left;
             line-height: 1.8;
             font-size: 1.15rem;
         }
@@ -168,7 +169,7 @@
     <!-- Slide 2: Clinical Problem -->
     <div class="slide" id="slide-2">
         <h1 class="slide-title">Systemic Effects of Sleep Apnea</h1>
-        <div class="text-container text-center" style="text-align: center;">
+        <div class="text-container">
             <p>Sleep apnea is well established as a risk factor for cardiovascular and cerebrovascular diseases, yet its impact on retinal vascular disease remains underexplored. The sustained episodes of nocturnal hypoxia and resulting inflammatory and hypercoagulable states associated with SA may predispose individuals to microvascular complications such as RVO.</p>
             <p>The connection between SA and RVO is biologically plausible given the effects of SA on the vascular system. Sleep apnea is characterized by repeated episodes of airway collapse during sleep, leading to <mark class="hl-red">nocturnal hypoxia</mark>, hypercapnia, <mark class="hl-red">sympathetic nervous system activation</mark>, and <mark class="hl-red">systemic inflammation</mark>. This cascade promotes <mark class="hl-green">endothelial dysfunction</mark>, increased <mark class="hl-green">oxidative stress</mark>, and a <mark class="hl-green">hypercoagulable state</mark>, all of which are well-recognized contributors to venous thrombotic events.</p>
         </div>
@@ -207,7 +208,7 @@
     <!-- Slide 6: Main Results - Overall RVO -->
     <div class="slide" id="slide-6">
         <h1 class="slide-title">Incidence of Retinal Vein Occlusion</h1>
-        <div class="text-container text-center" style="text-align: center;">
+        <div class="text-container">
             <p>The incidence of RVO was higher in the SA cohort compared with controls. Among 2,087,064 patients with SA, 547 (<mark class="hl-blue">0.026%</mark>) developed RVO, versus 475 (<mark class="hl-blue">0.023%</mark>) in the control cohort, corresponding to a <mark class="hl-red">risk ratio (RR) of 1.152</mark> (95% CI: 1.018-1.302; P=0.024).</p>
             <p>Cox regression demonstrated a 21.9% increased hazard of RVO in SA patients compared with controls (<mark class="hl-red">HR=1.219</mark>, 95% CI: 1.078-1.378; log-rank χ²=9.958; P=0.002).</p>
             <p>At 1 year, cumulative incidence of RVO was 0.018% in SA versus 0.015% in controls... By 5 years, incidence reached 0.043% versus 0.037% for RVO... At 20 years, cumulative incidence rose to 0.176% versus 0.153% for RVO...</p>
